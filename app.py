@@ -6,8 +6,8 @@ import mission_to_mars
 app = Flask(__name__)
 
 # Use PyMongo to establish Mongo connection
-mongo = PyMongo(app, uri="mongodb://localhost:27017/Mars_Data")
-mongo.db.collection.drop()
+mongo = PyMongo(app, uri="mongodb://localhost:27017/mars_data")
+
 
 # Route to render index.html template using data from Mongo
 @app.route("/")

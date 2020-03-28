@@ -46,9 +46,7 @@
         </div>
         <br>
         <div class="row">
-			{% for table in Martian.MartianHTML_table %}
-				{{ table|safe }}
-			{% endfor %}
+				{{ Martian.MartianHTML_table|safe }}
         </div>
   
       </div>
@@ -59,7 +57,7 @@
         <h1>Martian Hemispheres</h1>
     </div>
     <br>
-	
+  
 	<div class="row">
     {% for HEMI in Martian.hemisphere_image_urls %}
           
